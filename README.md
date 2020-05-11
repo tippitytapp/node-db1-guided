@@ -10,6 +10,29 @@ tudio.pl/index.rvt?act=download).
 
 ## Project Setup
 
-- [ ] fork and clone this repository.
-- [ ] **CD into the folder** where you cloned **your fork**.
-- [ ] type `npm i` to download dependencies.
+- [x] fork and clone this repository.
+- [x] **CD into the folder** where you cloned **your fork**.
+- [x] type `npm i` to download dependencies.
+
+## NOTES
+
+- SQL is a language that is used to communicate with Database Servers
+
+- DDL - Data Defintion Language used to modify database objects ex. CREATE TABLE, ALTER TABLE
+- DML - Data Manipulation Language used to manipulate the stored data. ex. INSERT, UPDATE, DELETE
+- DQL - Data Query Language used to asked questions about the data stored ex. SELECT
+- DCL - Data Control language is used to manage database security and user access ex. REVOKE, GRANT
+- TCC - Transaction Control Commands used for managing groups of statements that must execute as a unit or not execute at all ex. COMMIT, ROLLBACK
+
+Differences between relational databases and sql are that sql is a language for interacting with relational databases
+
+SQL commands are written in UPPERCASE and end with a ;
+
+## SQL Commands
+| Command              | URL               | Method | Response         |
+| :------------------- | :---------------- | :----- | :--------------- |
+| SELECT               |  what you want to see|||
+
+
+SELECT employeeID, firstName, lastName, birthdate from employees;
+SELECT employeeID, (firstName || " " || lastName) as Name, birthdate from employees;
